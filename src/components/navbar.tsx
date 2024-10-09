@@ -1,4 +1,4 @@
-// src/components/Navbar.tsx
+// src/components/navbar.tsx
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -11,20 +11,14 @@ const Navbar: React.FC = () => {
 
   return (
     <div>
-      {/* Top Navbar */}
-      <div className="bg-gray-900 p-2 flex justify-center space-x-4">
-        <button className="bg-transparent border border-white text-white py-1 px-3 rounded">
-          For Individuals
-        </button>
-        <button className="bg-transparent border border-white text-white py-1 px-3 rounded">
-          For Businesses
-        </button>
-        <button className="bg-transparent border border-white text-white py-1 px-3 rounded">
-          For Public Sector
-        </button>
+      {/* Top Navigation Row */}
+      <div className="bg-gray-900 text-white p-2 flex justify-center gap-4">
+        <button className="hover:bg-gray-700 px-3 py-1">For Individuals</button>
+        <button className="hover:bg-gray-700 px-3 py-1">For Businesses</button>
+        <button className="hover:bg-gray-700 px-3 py-1">For Public Sector</button>
       </div>
 
-      {/* Main Navbar */}
+      {/* Main Navigation Row */}
       <nav className="bg-gray-800 p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white text-xl font-bold">
@@ -61,45 +55,25 @@ const Navbar: React.FC = () => {
                 Home
               </a>
             </Link>
-            <Link href="/product">
+            <Link href="/courses">
               <a className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-                Product
+                Courses
               </a>
             </Link>
-            <Link href="/solutions">
+            <Link href="/internship">
               <a className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-                Solutions
+                Internships
               </a>
             </Link>
-            <Link href="/resources">
+            <Link href="/devsol">
               <a className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-                Resources
+                Devsol
               </a>
             </Link>
             <Link href="/blog">
               <a className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
                 Blog
               </a>
-            </Link>
-            <Link href="/contact">
-              <a className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-                Contact
-              </a>
-            </Link>
-          </div>
-          <div className="hidden md:flex items-center space-x-4">
-            <Link href="/contact">
-              <a className="text-white border border-white py-2 px-4 rounded hover:bg-white hover:text-gray-800">
-                Contact Sales
-              </a>
-            </Link>
-            <Link href="/plans">
-              <a className="bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-700">
-                View Plans
-              </a>
-            </Link>
-            <Link href="/signin">
-              <a className="text-white hover:text-gray-400">Sign In</a>
             </Link>
           </div>
         </div>
