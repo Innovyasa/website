@@ -1,15 +1,7 @@
-// src/pages/_app.tsx
-import '../styles/globals.css'; // Make sure Tailwind is properly set up
-import type { AppProps } from 'next/app';
-import Navbar from '../components/navbar';
+// src/app/page.tsx
+import { redirect } from 'next/navigation';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Navbar />
-      <Component {...pageProps} />
-    </>
-  );
+export default function Home() {
+  redirect('/innovyasa');
+  return null;
 }
-
-export default MyApp;
