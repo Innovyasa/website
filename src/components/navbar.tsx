@@ -15,15 +15,7 @@ const Navbar: React.FC = () => {
     <div>
       {/* Header Section */}
       <div className="bg-gray-900 text-white p-2 flex justify-center gap-4">
-        <button className="bg-transparent border border-white py-1 px-3 rounded hover:bg-gray-700">
-          For Individuals
-        </button>
-        <button className="bg-transparent border border-white py-1 px-3 rounded hover:bg-gray-700">
-          For Businesses
-        </button>
-        <button className="bg-transparent border border-white py-1 px-3 rounded hover:bg-gray-700">
-          For Public Sector
-        </button>
+
         <Link href="/innovyasa" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
               Innovyasa
             </Link>
