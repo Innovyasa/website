@@ -1,4 +1,6 @@
-// src/components/navbar.tsx
+// src/components/Navbar.tsx
+"use client"; // Ensure this is added to mark the component as a Client Component
+
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -11,21 +13,47 @@ const Navbar: React.FC = () => {
 
   return (
     <div>
-      {/* Top Navigation Row */}
+      {/* Header Section */}
       <div className="bg-gray-900 text-white p-2 flex justify-center gap-4">
-        <button className="hover:bg-gray-700 px-3 py-1">For Individuals</button>
-        <button className="hover:bg-gray-700 px-3 py-1">For Businesses</button>
-        <button className="hover:bg-gray-700 px-3 py-1">For Public Sector</button>
+        <button className="bg-transparent border border-white py-1 px-3 rounded hover:bg-gray-700">
+          For Individuals
+        </button>
+        <button className="bg-transparent border border-white py-1 px-3 rounded hover:bg-gray-700">
+          For Businesses
+        </button>
+        <button className="bg-transparent border border-white py-1 px-3 rounded hover:bg-gray-700">
+          For Public Sector
+        </button>
+        <Link href="/innovyasa" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+              Innovyasa
+            </Link>
+        <Link href="/courses" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+              Courses
+            </Link>
+            <Link href="/internship" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+              Internships
+            </Link>
+            <Link href="/devsol" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+              Devsol
+            </Link>
+            <Link href="/blog" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+              Blog
+            </Link>
+            <Link href="/signin" className="text-white hover:text-gray-400">
+              Sign In
+            </Link>
+
       </div>
 
-      {/* Main Navigation Row */}
+      {/* Main Navigation Section */}
       <nav className="bg-gray-800 p-4">
         <div className="container mx-auto flex justify-between items-center">
+          {/* Logo */}
           <div className="text-white text-xl font-bold">
-            <Link href="/">
-              <a>Innovyasa</a>
-            </Link>
+            <Link href="/">Innovyasa</Link>
           </div>
+
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={toggleNavbar}
@@ -47,34 +75,32 @@ const Navbar: React.FC = () => {
               </svg>
             </button>
           </div>
+
+          {/* Navigation Links */}
           <div
             className={`md:flex space-x-4 ${isOpen ? 'block' : 'hidden'} w-full md:w-auto`}
           >
-            <Link href="/">
-              <a className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-                Home
-              </a>
+            <Link href="/" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+              Home
             </Link>
-            <Link href="/courses">
-              <a className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-                Courses
-              </a>
+            <Link href="/" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+              Products
             </Link>
-            <Link href="/internship">
-              <a className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-                Internships
-              </a>
+
+            <Link href="/contact" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+              Contact
             </Link>
-            <Link href="/devsol">
-              <a className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-                Devsol
-              </a>
+          </div>
+
+          {/* Right-side Buttons */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Link href="/contact" className="text-white border border-white py-2 px-4 rounded hover:bg-white hover:text-gray-800">
+              Contact Sales
             </Link>
-            <Link href="/blog">
-              <a className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-                Blog
-              </a>
+            <Link href="/plans" className="bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-700">
+              View Plans
             </Link>
+
           </div>
         </div>
       </nav>
