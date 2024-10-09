@@ -1,7 +1,12 @@
 // src/app/page.tsx
-import { redirect } from 'next/navigation';
+import InnovyasaPage from './(innovyasa)/page';
+import Navbar from '@/components/navbar';
 
-export default function Home() {
-  redirect('/innovyasa');
-  return null;
+export default function HomePage() {
+  return (
+    <div>
+      <Navbar />
+      <InnovyasaPage />
+    </div>
+  );
 }
