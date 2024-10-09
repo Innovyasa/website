@@ -1,3 +1,5 @@
+// src/components/navbar.tsx
+
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -13,7 +15,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-xl font-bold">
           <Link href="/">
-            <a>Logo</a>
+            <a>Innovyasa</a>
           </Link>
         </div>
         <div className="md:hidden">
