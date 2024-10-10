@@ -1,5 +1,6 @@
 // src/app/innovyasa/page.tsx
 import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 
 export default function InnovyasaPage() {
   return (
@@ -9,14 +10,14 @@ export default function InnovyasaPage() {
         style={{
           padding: '50px 0',
           textAlign: 'center',
-          backgroundColor: '#f5f5f5',
+          backgroundColor: '#242145',
         }}
       >
         <h1>Welcome to Innovyasa</h1>
         <p>Your gateway to IT courses, internships, and project solutions</p>
       </header>
       <section
-        style={{ padding: '40px 20px', backgroundColor: '#fff' }}
+        style={{ padding: '40px 20px', backgroundColor: '#242145' }}
       >
         <h2>Our Offerings</h2>
         <div style={{ display: 'flex', gap: '20px' }}>
@@ -44,7 +45,7 @@ export default function InnovyasaPage() {
         </div>
       </section>
       <section
-        style={{ padding: '40px 20px', backgroundColor: '#e9ecef' }}
+        style={{ padding: '40px 20px', backgroundColor: '#fff', color:'#242145' }}
       >
         <h2>Featured Courses</h2>
         <p>Explore some of our popular courses below</p>
@@ -66,16 +67,8 @@ export default function InnovyasaPage() {
           </div>
         </div>
       </section>
-      <footer
-        style={{
-          padding: '20px',
-          textAlign: 'center',
-          backgroundColor: '#343a40',
-          color: '#fff',
-        }}
-      >
-        <p>© 2024 Innovyasa. All Rights Reserved.</p>
-      </footer>
+
+      <Footer />
     </div>
   );
 }

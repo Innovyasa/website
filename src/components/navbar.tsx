@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   return (
     <div>
       {/* Header Section */}
-      <div className="bg-gray-900 text-white p-2 flex justify-center gap-4">
+      <div className="bg-[#1b1833] text-white p-2 flex justify-end pr-28 gap-4">
 
         <Link href="/innovyasa" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
               Innovyasa
@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Main Navigation Section */}
-      <nav className="bg-gray-800 p-4">
+      <nav className="bg-[#252144] p-4">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="text-white text-xl font-bold">
