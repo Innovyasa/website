@@ -4,8 +4,8 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#252144] text-white py-10 px-5">
-      
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
+      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center ">
         {/* Logo and Description */}
         <div className="lg:col-span-2">
           <div className="text-2xl font-bold mb-2">INNOVYASA</div>
@@ -13,24 +13,30 @@ const Footer: React.FC = () => {
             Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
           </p>
         </div>
+
         {/* Newsletter Subscription */}
-        <div className="lg:col-span-2 ">
+        <div className="lg:col-span-2 self-end w-1/5">
           <h4 className="font-semibold mb-2">Subscribe to our newsletter</h4>
-          <form className="flex space-x-2">
+          <form className="relative">
             <input
               type="email"
               placeholder="Enter your email address"
-              className="w-full p-2 text-black rounded"
+              className="w-full p-2 text-black rounded pr-20" // Add padding-right to make space for the button
             />
-            <button className="bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded">
+            <button
+              type="submit"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-600 hover:bg-gray-700 text-white px-3 py-1 rounded"
+            >
               Subscribe
             </button>
           </form>
         </div>
+
       </div>
-      
+
+
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center mt-8 border-t border-gray-700 pt-6">
-        
+
         {/* About Us Section */}
         <div>
           <h4 className="font-semibold mb-2">About us</h4>
@@ -91,7 +97,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      
+
 
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center mt-8 border-t border-gray-700 pt-6">
         <p className="text-sm text-gray-400">
