@@ -4,10 +4,9 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#252144] text-white py-10 px-5">
-
-      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center ">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center space-y-8 lg:space-y-0">
         {/* Logo and Description */}
-        <div className="lg:col-span-2">
+        <div className="lg:w-1/3">
           <div className="text-2xl font-bold mb-2">INNOVYASA</div>
           <p className="text-sm text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
@@ -15,7 +14,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Newsletter Subscription */}
-        <div className="lg:col-span-2 self-end w-1/5">
+        <div className="lg:w-1/3 w-full">
           <h4 className="font-semibold mb-2">Subscribe to our newsletter</h4>
           <form className="relative">
             <input
@@ -31,12 +30,9 @@ const Footer: React.FC = () => {
             </button>
           </form>
         </div>
-
       </div>
 
-
-      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center mt-8 border-t border-gray-700 pt-6">
-
+      <div className="container mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 mt-8 border-t border-gray-700 pt-6">
         {/* About Us Section */}
         <div>
           <h4 className="font-semibold mb-2">About us</h4>
@@ -86,22 +82,16 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="flex flex-col space-y-4">
-          <div>
-            <h4 className="font-semibold">Email:</h4>
-            <p className="text-sm text-gray-400">contact@brix.com</p>
-          </div>
-          <div>
-            <h4 className="font-semibold">Phone:</h4>
-            <p className="text-sm text-gray-400">(414) 687 - 5892</p>
-          </div>
+        <div>
+          <h4 className="font-semibold mb-2">Contact Info</h4>
+          <p className="text-sm text-gray-400">Email: contact@brix.com</p>
+          <p className="text-sm text-gray-400">Phone: (414) 687 - 5892</p>
         </div>
       </div>
 
-
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center mt-8 border-t border-gray-700 pt-6">
         <p className="text-sm text-gray-400">
-          Copyright © 2025 BRIX Agency | All Rights Reserved
+          Copyright © 2025 INNOVYASA | All Rights Reserved
         </p>
         <div className="flex space-x-4 mt-4 sm:mt-0">
           <a href="#" className="text-gray-400 hover:text-white">Terms and Conditions</a>
