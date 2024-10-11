@@ -1,4 +1,3 @@
-// src/app/(blog)/blog/page.tsx
 import Navbar from '@/components/navbar';
 
 export default function BlogPage() {
@@ -14,7 +13,7 @@ export default function BlogPage() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <div>
             <h3>How to Get Started with Machine Learning</h3>
-            <p>Machine learning is transforming industries. Here&#39;s how you can get started...</p>
+            <p>Machine learning is transforming industries. Here&apos;s how you can get started...</p>
           </div>
           <div>
             <h3>Best Practices for Web Development in 2024</h3>
