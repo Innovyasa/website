@@ -1,6 +1,6 @@
 // src/app/(internship)/internship/page.tsx
 import Navbar from '@/components/navbar';
-
+import Footer from '@/components/footer';
 export default function InternshipPage() {
   return (
     <div>
@@ -22,6 +22,7 @@ export default function InternshipPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
