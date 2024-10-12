@@ -7,11 +7,29 @@
     <title>Document</title>
     <style>
         body {
-            background: radial-gradient(39.56% 48.29% at 20% 115.78%, #A663CC 0%, rgba(255, 22, 117, 0) 100%), 
-                        radial-gradient(54.23% 74.52% at 69.72% -10.08%, #A663CC 0%, rgba(166, 99, 204, 0) 100%), 
-                        radial-gradient(21.67% 31.7% at 39.72% 107.79%, rgba(0, 167, 225, 0.8) 0%, rgba(0, 167, 225, 0) 100%), 
-                        radial-gradient(50.08% 61.33% at 85.83% 24.14%, #A663CC 0%, rgba(166, 99, 204, 0) 100%), 
-                        #00A7E1 ;
+            /* Background composed of multiple radial gradients layered together */
+            background: 
+                /* Updated first radial gradient to match the size and position of the top-right gradient:
+                   placed at 20% from the left and 10% below the viewport (similar to -10.08% top-right),
+                   forming a light purple (#A663CC) glow effect near the bottom-left */
+                radial-gradient(54.23% 74.52% at 20% 110%, #A663CC 0%, rgba(166, 99, 204, 0) 100%), 
+
+                /* Second radial gradient remains the same: placed at 69.72% from the left and -10.08% from the top,
+                   forming a light purple (#A663CC) glow effect near the top right of the screen */
+                radial-gradient(54.23% 74.52% at 69.72% -10.08%, #A663CC 0%, rgba(166, 99, 204, 0) 100%), 
+
+                /* Third radial gradient: placed at 39.72% from the left and 107.79% from the top,
+                   adds a cyan (#00A7E1) glow effect towards the bottom center */
+                radial-gradient(21.67% 31.7% at 39.72% 107.79%, #A663CC 0%, rgba(166, 99, 204, 0) 100%), 
+
+                /* Fourth radial gradient: placed at 85.83% from the left and 24.14% from the top,
+                   creates another light purple (#A663CC) glow effect around the upper-right area */
+                radial-gradient(50.08% 61.33% at 85.83% 24.14%, #A663CC 0%, rgba(166, 99, 204, 0) 100%), 
+
+                /* Base background color (cyan) that covers the entire background */
+                #00A7E1;
+
+            /* Ensures the background fills the entire screen */
             background-size: cover;
         }
     </style>
@@ -22,5 +40,3 @@
 </body>
 
 </html>
-
-

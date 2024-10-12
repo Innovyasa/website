@@ -19,14 +19,14 @@ const Navbar: React.FC = () => {
         <Link href="/innovyasa" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
               Innovyasa
             </Link>
-        <Link href="/courses" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-              Courses
-            </Link>
             <Link href="/internship" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
               Internships
             </Link>
             <Link href="/devsol" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
               Devsol
+            </Link>
+            <Link href="/courses" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+              Courses
             </Link>
             <Link href="/blog" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
               Blog
