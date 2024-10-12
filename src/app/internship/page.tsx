@@ -10,7 +10,7 @@ export default function InternshipPage() {
       {/* Header Section with Gradient Background */}
       <section
         style={{
-          padding: '60px 0',
+          padding: '50px 0',
           background: `
             radial-gradient(39.56% 48.29% at 20% 115.78%, #A663CC 0%, rgba(255, 22, 117, 0) 100%),
             radial-gradient(54.23% 74.52% at 69.72% -10.08%, #A663CC 0%, rgba(166, 99, 204, 0) 100%),
@@ -25,25 +25,24 @@ export default function InternshipPage() {
       >
         <div
           style={{
-            background: 'rgba(19, 15, 37, 0.6)', // Slightly darker for better readability
+            background: 'rgba(19, 15, 37, 0.5)',
             borderRadius: '24px',
-            padding: '40px',
-            maxWidth: '85%',
+            padding: '30px',
+            maxWidth: '80%',
             margin: '0 auto',
-            boxShadow: '0px 8px 24px rgba(0, 0, 0, 0.2)', // Subtle shadow for focus
           }}
         >
-          <h1 style={{ fontSize: '48px', fontWeight: 'bold', marginBottom: '20px' }}>
+          <h1 style={{ fontSize: '56px', fontWeight: 'bold', marginBottom: '20px' }}>
             Internship Opportunities
           </h1>
-          <p style={{ fontSize: '22px', marginBottom: '20px', lineHeight: '1.6' }}>
+          <p style={{ fontSize: '24px', marginBottom: '20px' }}>
             Gain real-world experience with Innovyasa internships.
           </p>
         </div>
       </section>
 
       {/* New Content - Intro and Insights */}
-      <section style={{ padding: '50px 20px', backgroundColor: '#252144', color: '#FFFFFF', textAlign: 'center' }}>
+      <section style={{ padding: '40px 20px', backgroundColor: '#252144', color: '#FFFFFF', textAlign: 'center' }}>
         <h2 className="text-3xl font-bold mb-8">Innovyasa Internship Program</h2>
         <p style={{ maxWidth: '700px', margin: '0 auto', lineHeight: '1.8', fontSize: '18px' }}>
           Welcome to the <strong>Innovyasa Internship Program</strong>—your gateway to career advancement in a cutting-edge virtual environment! 
@@ -57,7 +56,7 @@ export default function InternshipPage() {
         <h3 className="text-2xl font-semibold mt-8">Insights</h3>
         <ul className="list-disc pl-6 mt-6 space-y-4 text-left max-w-lg mx-auto text-base">
           <li><strong>Innovative Mindset:</strong> Engage in a culture that emphasizes practical application and the power of ideas.</li>
-          <li><strong>Versatile Skill Development:</strong> You'll engage in diverse, multidisciplinary tasks.</li>
+          <li><strong>Versatile Skill Development:</strong> You&apos;ll engage in diverse, multidisciplinary tasks.</li>
           <li><strong>Real-World Impact:</strong> The projects you work on will have tangible effects.</li>
           <li><strong>Collaboration and Teamwork:</strong> Cultivate strong teamwork skills in a collaborative environment.</li>
           <li><strong>Personal Growth and Legacy:</strong> Leave a lasting imprint on the Innovyasa internship program.</li>
@@ -83,7 +82,7 @@ export default function InternshipPage() {
         {/* Approach Section */}
         <h3 className="text-2xl font-semibold mt-12">Approach</h3>
         <p style={{ maxWidth: '700px', margin: '0 auto', lineHeight: '1.8', fontSize: '18px' }}>
-          At Innovyasa, we prioritize a hands-on learning approach. You’ll face real-world challenges that push you to apply your knowledge 
+          At Innovyasa, we prioritize a hands-on learning approach. You&apos;ll face real-world challenges that push you to apply your knowledge 
           and skills practically.
         </p>
         <ul className="list-disc pl-6 mt-6 space-y-4 text-left max-w-lg mx-auto text-base">
@@ -91,6 +90,33 @@ export default function InternshipPage() {
           <li>Creative Problem-Solving</li>
           <li>Practical Learning</li>
         </ul>
+      </section>
+
+      {/* ROI Section */}
+      <section style={{ padding: '40px 20px', backgroundColor: '#252144', color: '#FFFFFF', textAlign: 'center' }}>
+        <h2 className="text-3xl font-bold mb-6">ROI (Return on Investment)</h2>
+        <h3 className="text-2xl font-semibold">Perks</h3>
+        <ul className="list-disc pl-6 mt-4 space-y-2 text-left max-w-lg mx-auto text-base">
+          <li>Portfolio Development</li>
+          <li>Networking Opportunities</li>
+          <li>Employability</li>
+        </ul>
+
+        <h3 className="text-2xl font-semibold mt-8">Benefits</h3>
+        <ul className="list-disc pl-6 mt-4 space-y-2 text-left max-w-lg mx-auto text-base">
+          <li>Flexible Work Hours</li>
+          <li>Exclusive Networking Events</li>
+          <li>Access to Learning Resources</li>
+        </ul>
+
+        <h3 className="text-2xl font-semibold mt-8">Alumni Benefits</h3>
+        <ul className="list-disc pl-6 mt-4 space-y-2 text-left max-w-lg mx-auto text-base">
+          <li>Mentorship</li>
+          <li>Structured Feedback</li>
+          <li>Alumni Network</li>
+        </ul>
+
+        <p className="mt-8 max-w-lg mx-auto text-base">Innovyasa offers 24/7 support, ensuring you have access to dedicated mentors and a wealth of resources.</p>
       </section>
 
       {/* Pricing Plans and Comparison */}
@@ -133,10 +159,10 @@ export default function InternshipPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold mb-12">Full Comparison</h2>
           <div className="overflow-x-auto">
-            <table className="min-w-full border-collapse border border-gray-700 rounded-lg text-left">
+            <table className="min-w-full border-collapse border border-gray-700 rounded-lg">
               <thead>
                 <tr className="bg-[#1B1833]">
-                  <th className="px-6 py-4 border border-gray-600 font-bold">Feature</th>
+                  <th className="px-6 py-4 border border-gray-600 text-left font-bold">Feature</th>
                   <th className="px-6 py-4 border border-gray-600 text-center font-bold">Standard Plan - ₹499</th>
                   <th className="px-6 py-4 border border-gray-600 text-center font-bold">Premium Plan - ₹1499</th>
                 </tr>
