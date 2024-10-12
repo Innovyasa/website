@@ -78,7 +78,7 @@ export default function InnovyasaPage() {
               </li>
             </ul>
           </div>
-          <p style={{ fontSize: '24px' }}>
+          <p style={{ fontSize: '24px',  }}>
             At Innovyasa, we are committed to empowering students through dynamic
             learning experiences, expert-led internships, and hands-on project
             guidance. Our mission is to bridge the gap between traditional

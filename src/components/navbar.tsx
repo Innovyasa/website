@@ -3,6 +3,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'; // Import Image from Next.js
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,26 +16,24 @@ const Navbar: React.FC = () => {
     <div>
       {/* Header Section */}
       <div className="bg-[#1b1833] text-white p-2 flex justify-end pr-28 gap-4">
-
         <Link href="/innovyasa" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-              Innovyasa
-            </Link>
-            <Link href="/internship" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-              Internships
-            </Link>
-            <Link href="/devsol" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-              Devsol
-            </Link>
-            <Link href="/courses" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-              Courses
-            </Link>
-            <Link href="/blog" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
-              Blog
-            </Link>
-            <Link href="/signin" className="text-white hover:text-gray-400">
-              Sign In
-            </Link>
-
+          Innovyasa
+        </Link>
+        <Link href="/internship" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+          Internships
+        </Link>
+        <Link href="/devsol" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+          Devsol
+        </Link>
+        <Link href="/courses" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+          Courses
+        </Link>
+        <Link href="/blog" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
+          Blog
+        </Link>
+        <Link href="/signin" className="text-white hover:text-gray-400">
+          Sign In
+        </Link>
       </div>
 
       {/* Main Navigation Section */}
@@ -42,7 +41,14 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="text-white text-xl font-bold">
-            <Link href="/">Innovyasa</Link>
+            <Link href="/">
+              <Image
+                src="/assets/img/logo_trim-removebg-preview.png" // Path to your logo
+                alt="Innovyasa Logo"
+                width={150} // Set your desired width
+                height={50}  // Set your desired height
+              />
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -92,7 +98,6 @@ const Navbar: React.FC = () => {
             <Link href="/plans" className="bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-700">
               View Plans
             </Link>
-
           </div>
         </div>
       </nav>
