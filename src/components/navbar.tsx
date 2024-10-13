@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
           <div className="text-white text-xl font-bold">
             <Link href="/">
               <Image
-                src="/assets/img/logo_trim-removebg-preview.png" // Path to your logo
+                src="/assets/logo/logo_trim-removebg-preview.png" // Path to your logo
                 alt="Innovyasa Logo"
                 width={150} // Set your desired width
                 height={50}  // Set your desired height
