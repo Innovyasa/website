@@ -35,43 +35,43 @@ const Footer: React.FC = () => {
       <div className="container mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 mt-8 border-t border-gray-700 pt-6">
         {/* About Us Section */}
         <div>
-          <h4 className="font-semibold mb-2">About us</h4>
+          <h4 className="font-semibold mb-2"> <a href="">About us</a></h4>
           <ul className="text-sm text-gray-400 space-y-1">
-            <li>Mission</li>
-            <li>Our team</li>
-            <li>Awards</li>
-            <li>Testimonials</li>
-            <li>Privacy policy</li>
+            <li><a href="">Mission</a></li>
+            <li><a href="">Our team</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">Career</a></li>
           </ul>
         </div>
 
         {/* Services Section */}
         <div>
-          <h4 className="font-semibold mb-2">Services</h4>
+          <h4 className="font-semibold mb-2"><a href="">Internship</a></h4>
           <ul className="text-sm text-gray-400 space-y-1">
-            <li>Web design</li>
-            <li>Web development</li>
-            <li>Mobile design</li>
-            <li>UI/UX design</li>
-            <li>Branding design</li>
+            <li><a href="">Web Development</a></li>
+            <li><a href="">Programming</a></li>
+            <li><a href="">Hackathon</a></li>
+            <li><a href="">Workshops</a></li>
+            <li><a href="">Request a Internship</a></li>
           </ul>
         </div>
 
         {/* Portfolio Section */}
         <div>
-          <h4 className="font-semibold mb-2">Portfolio</h4>
+          <h4 className="font-semibold mb-2"><a href="">Devsol</a></h4>
           <ul className="text-sm text-gray-400 space-y-1">
-            <li>Corporate websites</li>
-            <li>E-commerce</li>
-            <li>Mobile apps</li>
-            <li>Landing pages</li>
-            <li>UI/UX projects</li>
+            <li><a href="">UI/UX Design</a></li>
+            <li><a href="">Web Development</a></li>
+            <li><a href="">IEEE Projects</a></li>
+            <li><a href="">Automations</a></li>
+            <li><a href="">Brand Marketing</a></li>
           </ul>
         </div>
 
         {/* Contact Us Section */}
         <div>
-          <h4 className="font-semibold mb-2">Contact us</h4>
+          <h4 className="font-semibold mb-2">Courses</h4>
           <ul className="text-sm text-gray-400 space-y-1">
             <li>Information</li>
             <li>Request a quote</li>
@@ -83,20 +83,23 @@ const Footer: React.FC = () => {
 
         {/* Contact Info */}
         <div>
-          <h4 className="font-semibold mb-2">Contact Info</h4>
+          <h4 className="font-semibold mb-2">Contact us</h4>
           <p className="text-sm text-gray-400">Email: contact@brix.com</p>
           <p className="text-sm text-gray-400">Phone: (414) 687 - 5892</p>
+          <ul className="text-sm text-gray-400 space-y-1">
+            <li>Request a quote</li>
+            <li>Consultation</li>
+            <li>Help center</li>
+          </ul>
         </div>
       </div>
 
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center mt-8 border-t border-gray-700 pt-6">
         <p className="text-sm text-gray-400">
-          Copyright © 2025 INNOVYASA | All Rights Reserved
+          Copyright © 2025 INNOVYASA | All Rights Reserved | <a href="#" className="text-gray-400 hover:text-white">Terms and Conditions</a>
+          | <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
         </p>
-        <div className="flex space-x-4 mt-4 sm:mt-0">
-          <a href="#" className="text-gray-400 hover:text-white">Terms and Conditions</a>
-          <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
-        </div>
+      
         <div className="flex space-x-4 mt-4 sm:mt-0">
           <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-facebook-f"></i></a>
           <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-twitter"></i></a>
