@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
             <Link href="/contact" className="text-white border border-white py-2 px-4 rounded hover:bg-white hover:text-gray-800">
               Contact Sales
             </Link>
-            <Link href="/plans" className="bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-700">
+            <Link href="/plans" className="bg-[#00a7e1] text-[#2a2754] py-2 px-4 rounded hover:bg-[#80DFFF] ">
               View Plans
             </Link>
           </div>
