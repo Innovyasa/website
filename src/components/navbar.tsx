@@ -31,9 +31,23 @@ const Navbar: React.FC = () => {
         <Link href="/blog" className="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-400">
           Blog
         </Link>
-        <Link href="/signin" className="text-white hover:text-gray-400">
-          Sign In
-        </Link>
+        |<div className="flex items-center space-x-0">
+          {/* Logo/Icon */}
+          <Link href="/">
+            <Image
+              src="/assets/icons/account/icons8-account-32.png" // Path to your logo
+              alt="Innovyasa Logo"
+              width={24} // Set your desired width
+              height={24} // Set your desired height
+            />
+          </Link>
+
+          {/* Sign In Link */}
+          <Link href="/signin" className="text-white hover:text-gray-400 pl-1.5">
+            Sign In
+          </Link>
+        </div>
+
       </div>
 
       {/* Main Navigation Section */}

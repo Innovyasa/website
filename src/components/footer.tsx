@@ -1,5 +1,8 @@
 // Footer.tsx
 import React from 'react';
+import 'boxicons/css/boxicons.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Footer: React.FC = () => {
   return (
@@ -83,29 +86,48 @@ const Footer: React.FC = () => {
 
         {/* Contact Info */}
         <div>
-          <h4 className="font-semibold mb-2">Contact us</h4>
-          <p className="text-sm text-gray-400">Email: contact@brix.com</p>
-          <p className="text-sm text-gray-400">Phone: (414) 687 - 5892</p>
-          <ul className="text-sm text-gray-400 space-y-1">
-            <li>Request a quote</li>
-            <li>Consultation</li>
-            <li>Help center</li>
-          </ul>
-        </div>
+        <h4 className="font-semibold mb-2">Contact us</h4>
+
+        <p className="text-sm text-gray-400 flex items-center">
+          <i className="bx bxl-gmail text-[22px] mr-2"></i>
+          <a href="mailto:info@innovyasa.com" className="hover:text-white">info@innovyasa.com </a>
+        </p>
+
+        <p className="text-sm text-gray-400 flex items-center">
+          <i className="bx bxs-phone-call text-[22px] mr-2"></i>
+          <a href="tel:+919492030578" className="hover:text-white">+91 94920 30578</a>
+        </p>
+
+        <ul className="text-sm text-gray-400 space-y-1">
+          <li>Request a quote</li>
+          <li>Consultation</li>
+          <li>Help center</li>
+        </ul>
       </div>
+      </div>
+      
 
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center mt-8 border-t border-gray-700 pt-6">
         <p className="text-sm text-gray-400">
           Copyright © 2025 INNOVYASA | All Rights Reserved | <a href="#" className="text-gray-400 hover:text-white">Terms and Conditions</a>
           | <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
         </p>
-      
+
         <div className="flex space-x-4 mt-4 sm:mt-0">
-          <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-facebook-f"></i></a>
-          <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-twitter"></i></a>
-          <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-instagram"></i></a>
-          <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-linkedin-in"></i></a>
+          <a href="mailto:info@innovyasa.com" className="text-gray-400 hover:text-white height-32">
+            <i className="bx bx-mail-send text-[28px]"></i>
+          </a>
+          <a href="https://wa.me/919492030578" className="text-gray-400 hover:text-white">
+            <i className="bx bxl-whatsapp text-[28px]"></i>
+          </a>
+          <a href="https://www.instagram.com/innovyasa/" className="text-gray-400 hover:text-white">
+            <i className="bx bxl-instagram text-[28px]"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/innovyasa/" className="text-gray-400 hover:text-white">
+            <i className="bx bxl-linkedin text-[28px]"></i>
+          </a>
         </div>
+
       </div>
     </footer>
   );
