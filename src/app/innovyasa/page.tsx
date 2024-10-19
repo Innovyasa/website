@@ -47,9 +47,12 @@ export default function InnovyasaPage() {
           style={{
             background: 'rgba(19, 15, 37, 0.5)',
             borderRadius: '24px',
-            padding: '30px',
+            paddingTop: '34px',
+            paddingLeft:'5%',
+            paddingRight:'5%',
             maxWidth: '84%',
             margin: '0 auto',
+           
           }}
         >
           <h1 className="font-bold"  style={{ fontSize: '56px' }}>
