@@ -1,3 +1,4 @@
+"use client";
 import 'boxicons/css/boxicons.min.css';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -21,7 +22,6 @@ const Navbar: React.FC = () => {
       setDropdownOpen(false);
     }
   };
-  
 
   useEffect(() => {
     if (dropdownOpen) {
@@ -121,7 +121,7 @@ const Navbar: React.FC = () => {
                 Products <i className={`bx ${dropdownOpen ? 'bx-chevron-up' : 'bx-chevron-down'} ml-2`} />
               </button>
               {dropdownOpen && (
-                <div className="absolute left-0 mt-2 bg-white text-[#252144] rounded-lg shadow-lg p-6 w-[800px] flex justify-between flex-wrap z-50">
+                <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white text-[#252144] rounded-lg shadow-lg p-6 w-[800px] flex justify-between flex-wrap z-50">
                   <div className="w-full md:w-1/3 mb-4">
                     <h3 className="font-bold mb-2">Top Features</h3>
                     <ul className="list-none space-y-1">
