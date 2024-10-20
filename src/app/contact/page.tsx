@@ -64,16 +64,16 @@ export default function ContactPage() {
         <div className="flex flex-wrap justify-center gap-6">
           <div className="flex items-center space-x-3 text-gray-700">
             <i className="bx bxl-envelope text-4xl text-gray-600"></i>
-            <p className="text-lg"><strong>Email:</strong> contact@company.com</p>
+            <p className="text-lg"><strong>Email:</strong> info@innovyasa.com</p>
           </div>
           <div className="flex items-center space-x-3 text-gray-700">
             <i className="bx bxs-phone-call text-4xl text-gray-600"></i>
-            <p className="text-lg"><strong>Phone:</strong> (414) 687 - 5892</p>
+            <p className="text-lg"><strong>Phone:</strong> +91 9492030578</p>
           </div>
-          <div className="flex items-center space-x-3 text-gray-700">
+          {/*<div className="flex items-center space-x-3 text-gray-700">
             <i className="bx bxs-map text-4xl text-gray-600"></i>
             <p className="text-lg"><strong>Location:</strong> 56 Middle Point Rd, San Francisco, 94124</p>
-          </div>
+          </div>*/}
         </div>
       </section>
 
