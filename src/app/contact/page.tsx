@@ -64,11 +64,11 @@ export default function ContactPage() {
         <div className="flex flex-wrap justify-center gap-6">
           <div className="flex items-center space-x-3 text-gray-700">
             <i className="bx bxl-envelope text-4xl text-gray-600"></i>
-            <p className="text-lg"><strong>Email:</strong> info@innovyasa.com</p>
+            <p className="text-lg"><strong>Email:</strong><a href="mailto:info@innovyasa.com">info@innovyasa.com</a></p>
           </div>
           <div className="flex items-center space-x-3 text-gray-700">
             <i className="bx bxs-phone-call text-4xl text-gray-600"></i>
-            <p className="text-lg"><strong>Phone:</strong> +91 9492030578</p>
+            <p className="text-lg"><strong>Phone:</strong><a href="tel:+919492030578"> +91 9492030578</a></p>
           </div>
           {/*<div className="flex items-center space-x-3 text-gray-700">
             <i className="bx bxs-map text-4xl text-gray-600"></i>
