@@ -174,7 +174,7 @@ export default function InnovyasaPage() {
         </p>
       </section>
 
-      <section style={{ padding: '40px 20px', backgroundColor: '#242145', color: '#FFFFFF' }}>
+      <section style={{ padding: '40px 20px', backgroundColor: '#f3f7fa', color: '#000000' }}>
         <h2>Featured Courses</h2>
         <p>Explore some of our popular courses below:</p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
