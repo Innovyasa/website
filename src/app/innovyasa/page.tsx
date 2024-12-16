@@ -20,7 +20,7 @@ export default function InnovyasaPage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 3000); // Change every 3 second
+    }, 3000); // Change every 3 seconds
 
     return () => clearInterval(interval);
   }, [items.length]);
